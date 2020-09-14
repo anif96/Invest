@@ -1,0 +1,19 @@
+<!-- <div class="clr-form-control" [formGroup]="group">
+  <label for="example" class="clr-control-label">{{field.label}}</label>
+  <div class="clr-control-container">
+    <div class="clr-input-wrapper">
+      <input [formControlName]="field.name" [placeholder]="field.label" [type]="field.inputType" class="clr-input">
+      <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+    </div>
+    <span *ngFor="let validation of field.validations;" class="clr-subtext">
+      <span *ngIf="group.get(field.name).hasError(validation.name)">{{validation.message}}</span>
+    </span>
+  </div>
+</div> -->
+
+<clr-control-container [formGroup]="group" style="width: fit-content;" [ngStyle]="{'display': field.alignerContainer? 'inline-block': 'flex'}">
+    <label class="clr-col-auto" [ngStyle]="{'display': field.alignerLabel? 'unset' : 'block'}">{{field.label}}</label>
+    <input clrControl [formControlName]="field.name" [placeholder]="field.label" [type]="field.inputType" class="clr-col-auto" [ngStyle]="{'width': field.width? field.width : '200px'}" />
+    <clr-control-error *ngFor="let validation of field.validations;" [hidden]="!group.get(field.name).hasError(validation.name)">{{validation.message}}
+    </clr-control-error>
+</clr-control-container>

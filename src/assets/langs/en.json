@@ -1,0 +1,23 @@
+{
+    "LOGIN": {
+        "TITRE": "Authentification"
+    },
+    "LABEL": {
+        "EMAIL": "Email",
+        "PASSWORD": "Password",
+        "CONNECTION": "Login",
+        "ENREGISTRER": "Save",
+        "AJOUTER": "Add",
+        "MODIFIER": "Edit",
+        "SUPPRIMER": "Delete"
+    },
+    "ERREUR": {
+        "OBLIGATOIRE": "Required",
+        "EMAIL": "Email adress invalid"
+    },
+    "MESSAGE": {
+        "LOGIN_ECHEC": "Email or password incorrect",
+        "SUCCES": "Operation done successfully",
+        "ECHEC": "Operation failed"
+    }
+}

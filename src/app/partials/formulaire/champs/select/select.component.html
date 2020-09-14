@@ -1,0 +1,21 @@
+<!-- <div class="clr-form-control" [formGroup]="group">
+    <label for="select-error" class="clr-control-label"> {{field.label}} </label>
+    <div class="clr-control-container clr-error">
+      <div class="clr-select-wrapper">
+        <select id="select-error" class="clr-select" [formControlName]="field.name">
+          <option *ngFor="let item of field.options" [value]="item">{{item}}</option>
+        </select>
+        <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+      </div>
+      <span class="clr-subtext" ></span>
+    </div>
+  </div> -->
+
+<clr-select-container [formGroup]="group" style="width: fit-content;" class="feature-align" [ngStyle]="{'display': field.alignerContainer? 'inline-block': 'flex'}">
+    <label class="clr-col" [ngStyle]="{'display': field.alignerLabel? 'unset' : 'block'}">{{field.label}}</label>
+    <select clrSelect class="clr-col-auto" [formControlName]="field.name" [ngStyle]="{'width': field.width? field.width : 'auto'}">
+      <option *ngFor="let item of field.options" [value]="item.value">{{item.text}}</option>
+    </select>
+    <clr-control-error *ngFor="let validation of field.validations;" [hidden]="!group.get(field.name).hasError(validation.name)">{{validation.message}}
+    </clr-control-error>
+</clr-select-container>

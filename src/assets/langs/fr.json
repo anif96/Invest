@@ -1,0 +1,45 @@
+{
+    "LOGIN": {
+        "TITRE": "Authentification"
+    },
+    "LABEL": {
+        "EMAIL": "Email",
+        "PASSWORD": "Mot de passe",
+        "CONNECTION": "Se connecter",
+        "ENREGISTRER": "Enregistrer",
+        "AJOUTER": "Ajouter",
+        "MODIFIER": "Modifier",
+        "SUPPRIMER": "Supprimer"
+    },
+    "ERREUR": {
+        "OBLIGATOIRE": "Champ obligatoire",
+        "EMAIL": "Adresse email invalide"
+    },
+    "MESSAGE": {
+        "LOGIN_ECHEC": "Email ou mot de passe incorrect",
+        "SUCCES": "Opération effectuée avec succès",
+        "ECHEC": "Erreur de l'opération"
+    },
+    "SIDEBAR": {
+        "VENTE": "Vente",
+        "ACHAT": "Achat",
+        "LIVRAISON": "Livraison",
+        "RECEPTION": "Reception",
+        "TIERS": "Tiers",
+        "CLIENT": "Client",
+        "FOURNISSEUR": "Fournisseur",
+        "PRODUITS": "Produit",
+        "ARTICLE": "Article",
+        "FAMILLE": "Famille",
+        "CATEGORIE": "Catégorie",
+        "MARQUE": "Marque",
+        "PARAMETRES": "Paramètres"
+    },
+    "NAVBAR": {
+        "ADMINISTRATION": "Administration",
+        "PROFIL": "Profil",
+        "PASSWORD": "Mot de passe",
+        "GERER_UTILISATEUR": "Gerer les utilisateurs",
+        "GERER_DROIT": "Gerer les droits"
+    }
+}

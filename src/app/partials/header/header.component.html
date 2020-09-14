@@ -1,0 +1,23 @@
+<header class="header-6">
+    <div class="branding">
+        <a href="..." class="nav-link">
+            LOGO
+            <!-- <clr-icon shape="vm-bug" href=""></clr-icon> -->
+            <span class="title">Invest</span>
+        </a>
+    </div>
+    <div class="header-actions">
+        <clr-dropdown>
+            <button class="nav-icon" clrDropdownTrigger aria-label="toggle settings menu">
+                <clr-icon shape="cog"></clr-icon>
+                <clr-icon shape="caret down"></clr-icon>
+            </button>
+            <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+                <!-- <a [routerLink]="['home', {outlets: {'outlet2':['profil']}}]" clrDropdownItem>Profil</a> -->
+                <a [routerLink]="profil" clrDropdownItem>Profil</a>
+                <a [routerLink]="password" clrDropdownItem>Modification de mot de passe</a>
+                <a href="..." clrDropdownItem>Se déconnecter</a>
+            </clr-dropdown-menu>
+        </clr-dropdown>
+    </div>
+</header>

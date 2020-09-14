@@ -1,0 +1,4 @@
+<form clrForm [formGroup]="form" (submit)="onSubmit($event)">
+    <ng-container *ngFor="let field of fields;" appChampsDynamique [field]="field" [group]="form">
+    </ng-container>
+</form>

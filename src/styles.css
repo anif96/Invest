@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primary: #1f4e79;
+    --warning: #f5ff64;
+    --tertiary: #70ad47;
+}
+
+.cs-primary {
+    background-color: var(--primary) !important;
+    color: white;
+}
+
+.cs-secondary {
+    background-color: var(--warning) !important;
+    color: #1f4e79;
+}
+
+.cs-tertiary {
+    background-color: var(--tertiary) !important;
+    color: white;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn.btn-warning {
+    background-color: var(--warning) !important;
+    border-color: var(--warning) !important;
+}
+
+.btn.btn-success {
+    background-color: var(--tertiary) !important;
+    border-color: var(--tertiary) !important;
+}
+
+.clr-form-horizontal .clr-form-control>.clr-control-label,
+.clr-form-horizontal .clr-form-control>.clr-form-control.clr-form-control-multi .clr-control-label {
+    width: unset;
+}
+
+app-input,
+app-select {
+    margin-right: 60px;
+}
+
+
+/* titre dans les differents pages */
+
+.content-container h3.titre {
+    background-color: #fff6ce;
+    padding: 5px;
+    font-weight: 500;
+    color: #00364d;
+    font-size: 18px;
+}
+
+
+/*
+.content-container input {
+    width: 200px;
+} */
+
+
+/* fieldset et legende */
+
+fieldset {
+    border: 1px solid var(--primary);
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+    position: relative;
+}
+
+legend {
+    /* background-color: var(--primary); */
+    /* color: white; */
+    padding: 3px 8px;
+    margin-left: 40px;
+    width: fit-content;
+}
+
+.legend2 {
+    position: absolute;
+    top: -0.27em;
+    right: 95px;
+    background: #fafafa;
+    line-height: 1.2em;
+}
+
+.legend2 .btn-group {
+    margin-right: unset;
+}
+
+.legend2 .btn-group input {
+    border: solid 1px;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.clr-subtext {
+    display: table;
+}

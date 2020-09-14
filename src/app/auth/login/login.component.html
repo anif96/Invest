@@ -1,0 +1,48 @@
+<div class="clr-row container">
+    <div class="clr-col-9 img-container">
+        <div class='slider'>
+            <div class='slide3'></div>
+        </div>
+    </div>
+    <div class="clr-col-3">
+        <div class="clr-row logo-container clr-justify-content-center">
+            <div class="clr-col-auto">
+                LOGO
+            </div>
+            <div class="clr-col-auto">
+                <h2>{{ 'LOGIN.TITRE' | translate }}</h2>
+            </div>
+            <div class="clr-col-12">
+                <form clrForm [formGroup]="userform" (ngSubmit)="onSubmit(userform.value)">
+                    <clr-control-container>
+                        <label class="clr-col-auto">{{ 'LABEL.EMAIL' | translate}}</label>
+                        <input class="clr-col-12" clrControl formControlName="email" />
+                        <clr-control-error *clrIfError="'required'">{{ 'ERREUR.OBLIGATOIRE' | translate}}</clr-control-error>
+                        <clr-control-error *clrIfError="'email'; error as err">{{ 'ERREUR.EMAIL' | translate }}</clr-control-error>
+                    </clr-control-container>
+
+                    <clr-control-container>
+                        <label class="clr-col-auto">{{ 'LABEL.PASSWORD' | translate}}</label>
+                        <input class="clr-col-12" clrControl formControlName="password" type="password" />
+                        <clr-control-error *clrIfError="'required'">{{ 'ERREUR.OBLIGATOIRE' | translate}}</clr-control-error>
+                    </clr-control-container>
+
+                    <br>
+                    <div class="alert alert-danger" role="alert" *ngIf="message">
+                        <div class="alert-items">
+                            <div class="alert-item static">
+                                <div class="alert-icon-wrapper">
+                                    <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
+                                </div>
+                                <span class="alert-text">
+                                  {{ "MESSAGE.LOGIN_ECHEC" | translate }}
+                              </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success clr-col-12" type="submit" [disabled]="!userform.valid">{{ 'LABEL.CONNECTION' | translate }}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

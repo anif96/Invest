@@ -1,0 +1,3 @@
+<div [formGroup]="group" style="width: fit-content;" [ngStyle]="{'display': field.alignerContainer? 'inline-block' : 'flex'}">
+    <button [type]="field.inputType" [class]="field.classe" [ngStyle]="{'width': field.width? field.width : 'auto'}">{{field.label}}</button>
+</div>
